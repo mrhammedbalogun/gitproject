@@ -145,10 +145,103 @@
 
 #..............checking for palindrome........... ie words with the same meaning when reversed
 
-the_string = input("Enter the string: ")
-rev_string = the_string[::-1]
+# the_string = input("Enter the string: ")
+# rev_string = the_string[::-1]
 
-if the_string == rev_string:
-    print(the_string,"is a palindrome")
-else:
-    print(the_string, "is not a palindrome")
+# if the_string == rev_string:
+#     print(the_string,"is a palindrome")
+# else:
+#     print(the_string, "is not a palindrome")
+
+
+# print("a" in "bola")
+
+# print("a" not in "bola")
+
+
+# a = int(input("Enter a value: "))
+# b = int(input("Enter b value: "))
+# c = int(input("Enter c value: "))
+# d = int(input("Enter d value: "))
+
+# divide = b * d
+
+# working = (a * d) + (b * c) 
+
+# print(f"{working} / {divide}")
+
+#........Working with split.......
+
+# fraction = input("Please enter a fraction in this format 'a/b+c/d': ")
+# splitted_fraction = fraction.split("+")
+# frac1 = splitted_fraction[0]
+# frac2 = splitted_fraction[1]
+
+# splitted_frac1 = frac1.split('/')
+# splitted_frac2 = frac2.split('/')
+
+# a = splitted_frac1[0]
+# b = splitted_frac1[1]
+# c = splitted_frac2[0]
+# d = splitted_frac2[1]
+
+# print(fraction)
+# print(splitted_fraction)
+# print(splitted_frac1)
+# print(splitted_frac2)
+# print(a,b,c,d)
+
+
+# #...............Shorter process for above splitting......
+# frac1, frac2 = fraction.split("+")
+# a,b,c,d = *frac1.split('/'), *frac2.split('/')
+
+# print(a,b,c,d)
+
+#........Split class assignment........
+
+# dob = input("Please enter date of birth in this format '1988-16-20: ")
+# workings = dob.split("-")
+# year_of_birth =  workings[0]
+
+# print(year_of_birth)
+
+# #................Built in function............
+# print(1,2,3,sep="\n",end="-")
+# print("new line")
+
+#......updating a file....
+
+# file = open ("my_data.csv","w")
+# print("Name","Age","State","Due", file=file, sep=",")
+# print("Ade",20,"Ogun State",20000, file=file, sep=",")
+
+#....Getting input from users and writting to excel........
+# details = input("Enter your details 'Eg first_name Age State Due: ")
+# splited_details = details.split(" ")
+# first_name = splited_details[0]
+# age = splited_details[1]
+# state = splited_details[2]
+# due = splited_details[3]
+# file = open ("my_data.csv","a")
+# print(first_name,age,state,due, file=file, sep=",")
+
+#.............Getting input from users and writting to excel(shorter format)......
+# details = input("Enter your details 'Eg first_name Age State Due: ")
+# first_name, age, state, due = details.split(" ")
+# file = open ("my_data.csv","a")
+# print(first_name,age,state,due, file=file, sep=",")
+
+#.......opening a file..............
+# filename = "my_music.txt"
+# mode = "r"
+# data = open(filename, mode)
+# lyrics = data.read()
+# print(lyrics)
+
+#.....creating and writing a file.....
+filename = "file.csv"
+mode = "w"
+file = open(filename, mode)
+text = "Atha, Science, Eating"
+file.write(text)
