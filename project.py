@@ -240,8 +240,113 @@
 # print(lyrics)
 
 #.....creating and writing a file.....
-filename = "file.csv"
-mode = "w"
-file = open(filename, mode)
-text = "Atha, Science, Eating"
-file.write(text)
+# filename = "file.csv"
+# mode = "w"
+# file = open(filename, mode)
+# text = "Atha, Science, Eating"
+# file.write(text)
+
+# myrange = range(20,60,3)
+
+# print(myrange)
+
+# print(type(myrange))
+
+# print(list(myrange))
+
+# print(list(reversed(myrange)))
+# x1 = list("abimbola")
+# x = [1,2,5,3,10,1,0,4]
+# print(sorted(x1))
+# print(sorted(x, reverse=True))
+# mydict = dict(a=20,b=30)
+# thenumber = [1,2,3,4,5,5,7]
+# mylist = ["seed", "bee", "a", "checked","print"]
+# print(sorted(mylist,key=len,reverse=True))
+# print(sum(thenumber))
+# print(mydict)
+# print(mydict["a"])
+# name = "abimbola"
+# print(set(name))
+
+# ##..............Mapping class................
+# nums = [1,2,3,4,5]
+# mapped = map(lambda x:x*2, nums)
+# print(list(mapped))
+
+# nums = ["ade","john","shola"]
+# mapped = map(lambda x:'mr '+ x, nums) #....Adding to MR to the list
+# print(list(mapped))
+
+# word = 'the word'
+# print(any(word))
+# print(word.upper())
+
+
+# word = input("Enter your words: ")
+# word = word.lower()
+# response = 'a' in word or 'e' in word or 'i' in word or 'o' in word or 'u' in word
+
+# print(f"{word} contains vowel: {response}")
+
+# #.............working with replace..........
+# theword = input('Enter your comment: ')
+# thewordl = theword.lower()
+# thewordl = theword.replace('Pre','Post')
+# print(theword)
+
+
+# nums = ["gem","hem","blem","chem"]
+# mapped = map(lambda x:x.replace('e','a'), nums) #....Adding to MR to the list
+# print(list(mapped))
+
+#............calculating for meand and mean deviation......
+# thevalues = [1,3,1,2,2,4]
+# answer = sum(thevalues) / len(thevalues)
+# mapped = map(lambda x:x-answer, thevalues) #....Adding to MR to the list
+# mapped2 = map(lambda x:(x-answer)**2, thevalues) 
+# answer = sum(mapped2) / 5
+# print(list(mapped))
+# print(list(mapped2))
+# print(answer)
+
+#...Joining text together....
+# a = ["Hello", "World"]
+# answer = ' '.join(a)
+
+# print(answer)
+
+
+# filename = "my_music.txt"
+# mode = "r"
+# data = open(filename, mode)
+# lyrics = data.read()
+
+# answer = lyrics.find('Gongo aso')
+# thecount = lyrics.count('Gongo aso')
+# print(thecount)
+# print(answer)
+
+#...............Assignment one..........
+# friend_1 = int(input("Friend 1: "))
+# friend_2 = int(input("Friend 2: "))
+# friend_3 = int(input("Friend 3: "))
+
+# total_sum = friend_1 + friend_2 + friend_3
+# to_crush = total_sum % 3
+# to_take = int((total_sum - to_crush) / 3aaa)
+# print(f"Each friend will take {to_take} candy and {to_crush} will be crush.")
+
+
+#...........Assignment 2.......................
+import random
+dice1 = random.randint(1,7)
+dice2 = random.randint(1,7)
+
+if (dice1 == 6) &  (dice2 == 6):
+    print("Yes! You won")
+else:
+    print("Awww! Try again")
+
+
+
