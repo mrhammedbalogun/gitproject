@@ -339,14 +339,196 @@
 
 
 #...........Assignment 2.......................
-import random
-dice1 = random.randint(1,7)
-dice2 = random.randint(1,7)
+# import random
+# dice1 = random.randint(1,7)
+# dice2 = random.randint(1,7)
 
-if (dice1 == 6) &  (dice2 == 6):
-    print("Yes! You won")
-else:
-    print("Awww! Try again")
+# if (dice1 == 6) &  (dice2 == 6):
+#     print("Yes! You won")
+# else:
+#     print("Awww! Try again")
+#.................................
+# behaviour = "bad"
+# age = 80
+
+# if (behaviour == "good") & (age < 18):
+#     print("You get a toy")
+    
+# elif (behaviour == "good") & (age > 18):
+#     print("You get a car")
+    
+# else:
+#     print("Left alone")
+
+#.........tenery operator.............
+# result = 49
+# response = "pass" if result > 50 else "fail"
+
+# print(response)
 
 
 
+# if question_time == "false":
+#     response1 = input("do you have pains")
+# elif response1 == "true":
+#     response2 = input("did you sleep well")
+# elif response2 == "true":
+#     response3 = input("have you done road work")
+# elif response3 == "false":
+#     response4 = input("do you have fever")
+# elif response4 == "true":
+#     response5 = input("are you vomitting")
+# elif response5 == "true":
+#     print("Please see a doctor")
+
+
+
+#.................if statement........
+# question_time = input("Are you okay")
+# if question_time == "false":
+#     response1 = input("do you have pains")
+#     #else question_time == "true":
+#         #print("PLease get a life")
+#     if response1 == "true":
+#         response2 = input("did you sleep well")
+#     #if response1 == "false":
+#         #print("Unable to diagnos now")
+#         if response2 == "true":
+#             response3 = input("have you done road work")
+                
+#             if response3 == "false":
+#                 response4 = input("do you have a fever")
+
+#                 if response4 == "true":
+#                     response5 = input("are you vomiting")
+
+#                     if response5 == "true":
+#                             print("Please see a doctor")
+#                     else:
+#                         print("bill")
+#                 else:
+#                     print("Take some anti maleria")
+#             else:
+#                 print("have some pain relief")
+#         else:
+#             print("try to sleep well")
+#         #if response2 == "false":
+#     else:           
+#         print("Unable to diagnose")
+
+#.............for loop........
+
+# a = ["car", "men", "boys"]
+
+# for i in a:
+#     print(i)
+
+# for i in range(20):
+#     print(i)
+
+
+# print("x".center(4),"|", "x_xbar".center(7),"|", "x_xbar2".center(7), sep="")
+# print("____".center(4),"|", "_______".center(7),"|", "_______".center(7),sep="")
+
+# mean = sum(range(10)) / len(range(10))
+
+# for i in range(10):
+#     xbar = i - mean
+#     xbar2 = xbar ** 2
+#     print(f"{i}".center(4), "|", f"{xbar}".center(7), "|", f"{xbar2}".center(7), sep="")
+
+#....class assignment.....
+# names = ["John", "Clem"]
+
+# for i in names:
+#     print("Hello ", i)
+
+
+# your_word = input("Enter your word here: ")
+# word = ['a','e','i','o','u']
+# for i in your_word:
+#     if i in word:
+#         print(i)
+
+# word = input("Enter your word: ")
+# vowels = ['a','e','i','o','u']
+# total_vowels = 0
+
+
+# print(f"Vowels | Count")
+# print(f"_______|_______")
+# for i in vowels:
+#     if i in word:
+#         #print(i)
+#         count = word.count(i)
+#         total_vowels = total_vowels + count
+#         print(f"{i.center(6)} | {str(count).center(6)}")
+# print(f"Total vowels: {total_vowels}")
+
+#..............working with continue............
+# scores = [20,30,70,10,67,50]
+# import random
+# for score in scores:
+
+#     c_assess = random.randint(10,30)
+#     f_score = score + c_assess
+
+#     marked_up = int(f_score * 1.2)
+#     if f_score > 70:
+#         print(score, c_assess, f_score, f_score)
+#         continue
+
+#     print(score, c_assess, f_score, marked_up, "marked")
+
+#.........Dice Games Assignment...........#
+
+# def roll_dice():
+
+#     i = 0
+#     while i < 6:
+
+#         input("PRESS ENTER TO ROLL DICE")
+
+#         import random
+#         dice1 = random.randint(1,6)
+#         dice2 = random.randint(1,6)
+
+#         dice = [dice1, dice2]
+
+#         if dice[0] == 6 and dice[1] == 6:
+#             print("WOW! YOU ROLLED:", dice1, dice2, ". !!!! YOU WON !!!")
+#             break
+#         i += 1
+#         print("What you currently ROLLED:",dice1,dice2)
+        
+    
+#     else:
+#         print("You have exhausted your 6 attempt")
+            
+# roll_dice()
+
+
+#...............My amortization calculation.............
+#monthly interest
+annual_rate = float(input("Enter annual interest rate")) / 100
+monthly_rate = ((1 + annual_rate) ** (1/12)) - 1
+print(monthly_rate)
+
+#Monthly pay
+repayment_period = int(input("How many years of repayment period")) * 12
+loan_amount = int(input("Enter the loan amount"))
+monthly_pay = round((loan_amount * monthly_rate) / (1 - ((1 + monthly_rate) ** -repayment_period)),2)
+print(monthly_pay)
+
+print("Month".center(5),"|", "Payment Required".center(16),"|", "Principal Paid".center(15), "|", "Interest Payment".center(16), "|", "Balance".center(7), sep="")
+principal_paid = 0
+current_loan = loan_amount - principal_paid
+i = 0
+while i <= repayment_period:
+    monthly_interest = round(current_loan * monthly_rate,2)
+    principal_paid = round(monthly_pay - monthly_interest,2)
+    remaining_balance = round(current_loan - principal_paid,2)
+    current_loan = remaining_balance
+
+    i += 1
+    print(f"{i}".center(5), "|", f"{monthly_pay}".center(16), "|", f"{principal_paid}".center(15), "|", f"{monthly_interest}".center(16), "|", f"{remaining_balance}".center(7), sep="")
