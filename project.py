@@ -482,10 +482,10 @@
 
 #.........Dice Games Assignment...........#
 
-# def roll_dice():
+# def roll_segun():
 
 #     i = 0
-#     while i < 6:
+#     while i < 5:
 
 #         input("PRESS ENTER TO ROLL DICE")
 
@@ -503,32 +503,75 @@
         
     
 #     else:
-#         print("You have exhausted your 6 attempt")
+#         print("You have exhausted your 5 attempt")
             
-# roll_dice()
+# roll_segun()
 
 
 #...............My amortization calculation.............
 #monthly interest
-annual_rate = float(input("Enter annual interest rate")) / 100
-monthly_rate = ((1 + annual_rate) ** (1/12)) - 1
-print(monthly_rate)
+# annual_rate = float(input("Enter annual interest rate")) / 100
+# monthly_rate = ((1 + annual_rate) ** (1/12)) - 1
+# print(monthly_rate)
 
-#Monthly pay
-repayment_period = int(input("How many years of repayment period")) * 12
-loan_amount = int(input("Enter the loan amount"))
-monthly_pay = round((loan_amount * monthly_rate) / (1 - ((1 + monthly_rate) ** -repayment_period)),2)
-print(monthly_pay)
+# #Monthly pay
+# repayment_period = int(input("How many years of repayment period")) * 12
+# loan_amount = int(input("Enter the loan amount"))
+# monthly_pay = round((loan_amount * monthly_rate) / (1 - ((1 + monthly_rate) ** -repayment_period)),2)
+# print(monthly_pay)
 
-print("Month".center(5),"|", "Payment Required".center(16),"|", "Principal Paid".center(15), "|", "Interest Payment".center(16), "|", "Balance".center(7), sep="")
-principal_paid = 0
-current_loan = loan_amount - principal_paid
-i = 0
-while i <= repayment_period:
-    monthly_interest = round(current_loan * monthly_rate,2)
-    principal_paid = round(monthly_pay - monthly_interest,2)
-    remaining_balance = round(current_loan - principal_paid,2)
-    current_loan = remaining_balance
+# print("Month".center(5),"|", "Payment Required".center(16),"|", "Principal Paid".center(15), "|", "Interest Payment".center(16), "|", "Balance".center(7), sep="")
+# principal_paid = 0
+# current_loan = loan_amount - principal_paid
+# i = 0
+# while i <= repayment_period:
+#     monthly_interest = round(current_loan * monthly_rate,2)
+#     principal_paid = round(monthly_pay - monthly_interest,2)
+#     remaining_balance = round(current_loan - principal_paid,2)
+#     current_loan = remaining_balance
 
-    i += 1
-    print(f"{i}".center(5), "|", f"{monthly_pay}".center(16), "|", f"{principal_paid}".center(15), "|", f"{monthly_interest}".center(16), "|", f"{remaining_balance}".center(7), sep="")
+#     i += 1
+#     print(f"{i}".center(5), "|", f"{monthly_pay}".center(16), "|", f"{principal_paid}".center(15), "|", f"{monthly_interest}".center(16), "|", f"{remaining_balance}".center(7), sep="")
+
+#    
+
+# name = ["hammed", "yusuf", "Ade"]
+
+# picked = random.choice(name)
+
+# print(picked)
+
+# n = 5
+
+# for i in range(n):
+#     i = i-1
+#     print(i)
+    
+# while n > 0:
+#     n -= 1
+#     print(n)
+
+# x = "boy Toys Junk"
+# y = "Mum Girl Luch"
+
+# n = 0
+# word_lenght = len(x)
+
+# while n < word_lenght:
+#     print(x[n], y[n])
+
+#     n += 1
+
+#.................Multiplication Table Assignment.......................
+
+# start_value = int(input("Start Multiplying from What Number ? :"))
+# end_value = int(input("End Multiplying from What Number ? :"))
+# mult_lenth = int(input("Enter Multiplication Table Length. Between 1 and 12 ? :"))
+# for i in range(start_value,(end_value + 1)):
+#     print("=====================================")
+#     print("Multiplication Table for ", i, "Time(s)")
+#     print("=====================================")
+#     for j in range(1,(mult_lenth + 1)):
+#         result= j * i
+#         print(f"{i}".center(4), " X ", f"{j}".center(4), " = ", f"{result}".center(5), sep="")
+
