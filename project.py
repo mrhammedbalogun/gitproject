@@ -573,5 +573,693 @@
 #     print("=====================================")
 #     for j in range(1,(mult_lenth + 1)):
 #         result= j * i
-#         print(f"{i}".center(4), " X ", f"{j}".center(4), " = ", f"{result}".center(5), sep="")
+#         print(f"{i}".center(4), " X ", f"{j}".center(4), " = ", f"{result}".center(5), '|' sep="")
 
+
+#.................Multiplication Table Assignment Format || .......................
+
+# start_value = int(input("Start Multiplying from What Number ? :"))
+# end_value = int(input("End Multiplying from What Number ? :"))
+# mult_lenth = int(input("Enter Multiplication Table Length. Between 1 and 12 ? :"))
+# for i in range(start_value,(end_value + 1)):
+#     for j in range(1,(mult_lenth + 1)):
+#         result= j * i
+#         print(f"{i}".center(3), " X ", f"{j}".center(3), " = ", f"{result}".center(5), end = "")
+#     print("\n")    
+
+#.........Woorking with List...........
+
+# mylist = [1,2,3,4,5]
+# print(mylist)
+
+# name = "Hammed"
+# new_name = list(name)
+# print(new_name)
+
+#....append....
+# prducts = "shes,bags,pencil"
+# new_product = prducts.split(",")
+# print(new_product)
+
+# new_product.append("Beans")
+
+# print(new_product)
+
+# tried = 2
+# while True:
+
+#     action = input("What do you want to do: ")
+
+#     if action == "add":
+#         new_prop = input("Enter a new prop : ")
+#         new_product.append(new_prop)
+#         print(new_product)
+
+#     elif action == "rem":
+#         new_prop = input("Enter a new prop : ")
+#         new_product.remove(new_prop)
+#         print(new_product)
+
+#     tried -= 1
+
+#     if tried == 0:
+#         print("You have exhausted attempt........!!")
+#         break
+
+#.....................Class work.....................
+# goods =  "yam,beans,bread"
+# new_goods = goods.split(",")
+
+# while True:
+#     already_counted = []
+
+#     for item in new_goods:
+#         if item not in already_counted:
+#             occurences = new_goods.count(item)
+#             already_counted.append(item)
+#             print(item, occurences)
+
+#     action = input("What do you want to do: ")
+    
+#     if action == "add":
+#         new_prop = input("Add new words : ")
+#         new_goods.append(new_prop)
+#         #print(new_goods, count)
+
+#     elif action == "rem":
+#         new_prop = input("Remove old words : ")
+#         new_goods.remove(new_prop)
+#         #print(new_goods, count)
+
+#............class on pop, extend and extend.....
+# x = [1,2,3,4,5]
+
+# x.extend([1,2,3,4])
+
+# x.insert(1,50)
+
+# x.pop(2)
+
+# q = [1,2,3,4,5,6]
+
+# squared = [x**2 for x in q]
+
+# x.index(2)
+# print(squared)
+
+
+
+# import this 
+
+
+
+# for a in range(1000):
+#     for i in range(20):
+#         thenumber = random.randint(1,7)
+#         the_numbers.append(thenumber)
+            
+#     already_counted = []
+
+#     for item in the_numbers:
+#         if item not in already_counted:
+#             occurences = the_numbers.count(item)
+#             already_counted.append(item)
+#             print(item, occurences)
+
+# new_occurences = []
+#for a in range(5):
+
+#..............ASSIGNMENT ON RANDOM ROLLING.....................
+# import random
+# for b in range(5): 
+#     print("")
+#     print("TRIAL ",b)
+#     the_numbers =  []
+
+#     for i in range(1000):
+#         thenumber = random.randint(1,7)
+#         the_numbers.append(thenumber)
+        
+                    
+#     already_counted = []
+#     total_occurrence = []
+#     items_list = []
+#     percentage = []
+
+
+#     for item in the_numbers:
+
+#         if item not in already_counted:
+            
+#             occurences = the_numbers.count(item)
+#             already_counted.append(item)
+#             total_occurrence.append(occurences)
+#             items_list.append(occurences) 
+
+#             sum_occurence = sum(total_occurrence)
+                
+#             for a in items_list:
+#                 result = (a / 1000) * 100
+
+#             percentage.append(result)
+
+
+                
+            
+#             print(f"{item} {occurences} {round(result,3)}%")
+#     print(f"The Highest Percentage is {max(percentage)}")
+                    
+                    
+
+# # print(sum_occurence)
+# # print(items_list)
+# # print(percentage)
+
+
+#.......... Dictionary Class.............
+
+# my_bio = {"name": "Hammed", "age":"100", "gender":"male"}
+
+# print(my_bio["name"].upper())
+
+# my_bio["course"] = ""   #To add a new key
+
+# print(my_bio.keys())
+
+# print(my_bio["age"])
+# print(my_bio.get("age")) #Works as above. And it better because it doenst pust error message when key not found, rather it say none. You can also add a default value eg print(my_bio.get("age","key not found")) 
+
+# del my_bio["age"] #To delete a key in a dict
+
+# #Another way to create a list
+
+# new_dict = dict(
+#     (
+#         (1,[2,3,"name"]),
+#         (2,3),
+#         (4,1)
+#     )
+# )
+  
+
+#............Class Assignment............
+
+# question = input("Please pick an option, RISKY or PERFECT:")
+# if question == "risky":
+#     def risky():
+#         file = open("risky.txt", "r")
+
+#         data = file.readlines()
+#         risky_dict = {}
+#         line_num = 1
+
+#         for line in data:
+#             risky_dict[line_num] = line
+#             line_num +=1
+#         #print(risky_dict)
+
+#         while True:
+#             requested_line = int(input("Please what line do you want to listing too: "))
+#             print(risky_dict[requested_line])
+#     risky()
+
+# elif question == "perfect":
+#     def perfect():
+#         file = open("perfect.txt", "r")
+
+#         data = file.readlines()
+#         perfect_dict = {}
+#         line_num = 1
+
+#         for line in data:
+#             perfect_dict[line_num] = line
+#             line_num +=1
+#         #print(perfect_dict)
+
+#         while True:
+#             requested_line = int(input("Please what line do you want to listing too: "))
+#             print(perfect_dict[requested_line])
+#     perfect()
+
+
+#................Assignment Correction................
+# risky = "risky_lyrics"
+# perfect = "perfect_lyrics"
+# brown = "brown_lyrics"
+
+# file = open(f"{risky}.txt", "r")
+
+# data = file.readlines()
+# lyrics_dict = {}
+# line_num = 1
+# lyrics_dict[risky] = {}
+
+# for line in data:
+#     lyrics_dict[risky][line_num] = line
+#     line_num +=1
+# file.close()
+
+# file = open(f"{brown}.txt", "r")
+
+# data = file.readlines()
+# lyrics_dict = {}
+# line_num = 1
+# lyrics_dict[brown] = {}
+
+# for line in data:
+#     lyrics_dict[brown][line_num] = line
+#     line_num +=1
+# file.close()
+
+# file = open(f"{perfect}.txt", "r")
+
+# data = file.readlines()
+# line_num = 1
+# lyrics_dict[perfect] = {}
+
+# for line in data:
+#     lyrics_dict[perfect][line_num] = line
+#     line_num +=1
+# file.close()
+
+# print(lyrics_dict.keys())
+
+# while True:
+#     requested_song = (input("Please what song would you like to get: "))
+#     print(lyrics_dict.keys())
+#     requested_line = int(input("Please what line would you like to get: "))
+
+#     print(lyrics_dict[requested_song][requested_line])
+
+#........option 2 ............
+# while True:
+#     requested_song = (input("Please what song would you like to get: "))
+#     print(lyrics_dict.keys())
+#     song = lyrics_dict.get(requested_song, "Song does not exist.")
+
+#     if song == "Song does not exist.":
+#         print(song)
+#         continue
+
+#     requested_line = int(input("Please what line would you like to get: "))
+#     print(song[requested_line])
+
+
+#.....................Working with API and assignment pulling data from an API................
+
+"""
+import requests 
+
+url = "http://checklight.pythonanywhere.com/streets"
+
+response = requests.get(url)
+data = response.json()
+
+print(data.keys())
+
+print(type(data["streets"]))
+
+streets = data["streets"]
+
+
+
+for area in streets:
+    #print(street.get("name"), "-", street.get("last_no_light"), "-", street.get("lga"), "-", street.get("status"))
+    name = area.get("name")
+    lga = area.get("lga")
+    print(f"\n",f"----------------------------------------------------","\n",f"New Street Information".center(60),"\n","\n",f"{name}----{lga} lga".center(60),"\n",f"----------------------------------------------------","\n", end = "")
+    all_data = area.get("history").get("time_line")
+    #all_data_new = area.get 
+    for street in all_data:
+        average_light_time = area.get("avg_power")
+        last_light_off = area.get("last_no_light")
+        last_light_on = area.get("last_light")
+        
+        duration_of_time = round(street.get("period") / 3600, 2)
+        light_of = street.get("time")
+        nepa_status = "ON (LIGHT UP)" if street.get("status") == 1 else "OFF (BLACK OUT)"
+        re_nepa_status = "brought" if street.get("status") == 1 else "took"
+        
+        print(f"\n",f"Street Name:".ljust(30), "| ", f"{name}","\n",f"LGA:".ljust(30), "| ", f"{lga}","\n",f"Down NEPA(Last date & time):".ljust(30), "| ", f"{last_light_off}","\n",f"Up NEPA(Last date & time):".ljust(30), "| ", f"{last_light_on}","\n",f"Light averagely stay for:".ljust(30), "| ", f"{duration_of_time}hr","\n",f"Current light status:".ljust(30), "| ", f"{nepa_status}. They {re_nepa_status} it on{light_of}","\n", end = "")
+
+"""
+    
+
+#......................... Ploting the Graph...................
+"""
+import requests
+import matplotlib.pyplot as plt 
+
+url = "http://checklight.pythonanywhere.com/streets"
+
+response = requests.get(url)
+data = response.json()
+
+print(data.keys())
+
+print(type(data["streets"]))
+
+streets = data["streets"]
+
+
+
+for area in streets:
+    
+    all_data = area.get("history").get("time_line")
+    
+    daily_supply = area.get("history").get("daily_supply")
+    print(daily_supply)
+
+    labels = daily_supply["labels"]
+    values = daily_supply["values"]
+
+    plt.bar(labels, values)
+    plt.title(area.get("name"))
+    plt.show()
+
+"""
+
+#............Class Assignment ........................
+"""
+import requests 
+
+url = "http://checklight.pythonanywhere.com/get_readings/1x0d001/5/"
+
+response = requests.get(url)
+data = response.json()
+
+streets = data["streets"]
+
+total = []
+for area in streets:
+    
+    status = area.get("status")
+    time = area.get("time")
+    
+    if status == 0:
+            #counting = status.count(item)
+        total.append(status)
+
+
+print(total)
+
+print(len(total))
+"""
+
+#...........New Assignment..............
+"""
+import requests 
+device = ["1x0d001","1x0d002","1x0d003","1x0d004"]
+device_result = {}
+
+for i in device:
+
+    url = f"http://checklight.pythonanywhere.com/get_readings/{i}/5/"
+
+    response = requests.get(url)
+    data = response.json()
+
+    streets = data["streets"]
+
+    days = {}
+
+    for street in streets:
+        status = street["status"]
+        time = street["time"]
+        day = time[5:7]
+
+        if status == 0:
+            if day not in days:
+                days[day] = 0
+            days[day] += 1
+
+    device_result[i] = days
+    #print(i, days)
+print(device_result)
+"""            
+
+#...................Assignment | Working with MAP weather......................
+# import citylist
+# import requests
+# data = citylist.citylist
+
+
+# user_city = input("Please enter city name : ")
+# user_country = input("Please enter country name : ")
+
+# def fetch_id(user_city, user_country, data):
+#     city_id = ""
+
+#     for city in data:
+#         if city["name"] == user_city and city["country"] == user_country:
+#             city_id = city["id"]
+#             print(city["name"], city["country"], city["id"], "\n\n\n\n\n")
+    
+#     return city_id
+
+# id = fetch_id(user_city, user_country, data)
+# #print(id)
+# api_key = "2b4abe1ddf6cc0ae335b794c5ef3e900"
+# url = f"http://api.openweathermap.org/data/2.5/forecast?id={id}&APPID={api_key}"
+
+# r = requests.get(url)
+# # print(r.json())
+# #file_name = "weather_data.py"
+
+# #file = open(file_name, "w")
+# #print(r.json(), file= file)
+# print(r.json())
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# a = int(input("Enter the value to multiply: "))
+# b = int(input("Enter the second value: "))
+
+# print(a * b)
+
+"""
+your_name = input("Enter your name: ")
+
+if your_name == "bunmi":
+    print(your_name, "is a girl, and she use to be a photographer")
+elif your_name == "ola":
+    print(your_name, "is a boy and currently a web developer")
+else:
+    print("You have entered a wrong value")
+"""
+
+
+
+#...........................Assignemnt .........................
+"""
+import requests 
+import citylist
+
+data = citylist.citylist
+
+user_city = input("Please enter city name : ")
+
+
+user_country = input("Please enter country name : ")
+
+def fetch_id(user_city, user_country, data):
+    city_id = ""
+
+    for city in data:
+        if city["name"] == user_city and city["country"] == user_country:
+            city_id = city["id"]
+            #print(city["name"], city["country"], city["id"], "\n\n")
+    
+    return city_id
+
+id = fetch_id(user_city, user_country, data)
+
+#print(id)
+
+api_key = "2b4abe1ddf6cc0ae335b794c5ef3e900"
+
+url = f"http://api.openweathermap.org/data/2.5/forecast?id={id}&APPID={api_key}"
+
+response = requests.get(url)
+data = response.json()
+
+# city_update = data["list"]
+# city_updatee = data["city"]
+
+name = data.get("city").get("name")
+country = data.get("city").get("country")
+lat = data.get("city").get("coord").get("lat")
+lon = data.get("city").get("coord").get("lon")
+
+file = open (f"{user_city}_{user_country}.csv","a")
+
+print("\n", f"City:", f"{name}", "\n", f"Country:", f"{country}", "\n", f"Latitude", f"{lat}", "\n", f"Longitude", f"{lon}", file=file, sep=",")
+
+for i in data.get("list"):
+    wind = i.get("wind").get("speed")
+    sea_level = i.get("main").get("sea_level")
+    #weather = i.get("weather")
+    temp = ((i.get("main").get("temp"))-32) * 5/9 
+    #dt = i.get("dt")
+    weather = i.get("weather")[0].get("main")
+    dt_text = i.get("dt_txt")
+
+    # file = open ("newlagos.csv","a")
+    # #print("\n",f"...........................","\n",f"Date & Time: {dt_text}".center(26),"\n",f"...........................")
+    # print("\n",f"Sea Level".ljust(13),"|", f"{sea_level}".ljust(13), "\n",f"Wind".ljust(13),"|", f"{wind}".ljust(13), "\n",f"Temperature".ljust(13), "|",f"{temp} C".ljust(13),"\n",f"Weather".ljust(13), "|",f"{weather} C".ljust(13), file=file, sep=",")
+
+    
+    
+    #print("\n",f"...........................","\n",f"Date & Time: {dt_text}".center(26),"\n",f"...........................")
+    print("\n",f"Sea Level".ljust(13), f"{sea_level}".ljust(13), "\n",f"Wind".ljust(13), f"{wind}".ljust(13), "\n",f"Temperature".ljust(13), f"{temp} C".ljust(13),"\n",f"Weather".ljust(13), f"{weather} C".ljust(13), file=file, sep=",")
+
+"""
+# numbers = [1, 1, 1, 1, 5]
+
+# for number in numbers:
+#     output = ""
+#     for a in range(number):
+#         output += "x"
+#     print(output)
+
+# numbers = [1,1,2,2,6,6,8,3,5]
+# new_num = []
+# for number in numbers:
+#     if number not in new_num:
+#         new_num.append(number)
+# print(new_num)
+
+# x = int(input("Enter your X: "))
+# y = int(input("Enter your Y: "))
+# def fdivide(x,y):
+#     return x / y
+
+# def fmultiply(x,y):
+#     return x * y
+
+# def fminus(x,y):
+#     return x - y
+
+# def faddition(x,y):
+#     return x + y
+
+
+# add = fdivide(x,y)
+# mult = fmultiply(x,y)
+# div = fdivide(x,y)
+# minus = fminus(x,y)
+
+# print("Addition ",add, "Multiplication ",mult, "Divition ",div, "Minus ",minus)
+
+
+# def interest(p,r,t):
+#     result = (p * r * t) / 100
+
+#     return result
+
+
+# print(interest(1000,10,5))
+# cal = []
+# def factorial_iter(n):
+#     num = 1
+#     while n >= 1:
+#         num = num * n
+#         cal.append(str(n))
+#         n = n -1
+        
+#     print(" X ".join(cal), "=", num)    
+#     print(cal)
+#     return num
+   
+
+
+
+# print(factorial_iter(5))
+
+
+#.......... Fibonnaci assignment .............
+"""
+import random
+database = []
+def Fibonnaci(n):
+    while sum(database) < n:
+        database.append(random.randint(1, n))
+
+    print(database)
+
+#.............................Check note for complete Fibonnaci assignemnt.
+
+Fibonnaci(20)
+"""
+
+
+#...................Assignment on calculating Variance....................
+import random
+random_length = 20
+list_a = []
+list_b = []
+
+def random_number():
+    for i in range(random_length):
+        ram_a = random.randint(1,20)
+        list_a.append(ram_a)
+        ram_b = random.randint(1,20)
+        list_b.append(ram_b)
+
+        i = i + 1
+    
+
+random_number()
+
+
+
+def the_mean():
+    result_a = sum(list_a) / len(list_a)
+    result_b = sum(list_b) / len(list_b)
+
+    
+    return result_a, result_b
+
+the_mean()
+
+
+
+def the_variance():
+    a = []
+    b = []
+    for item_a in list_a:
+        p = (item_a - the_mean()[0]) ** 2 
+        a.append(int(p))
+        var_result_a = round(sum(a) / (the_mean()[0] - 1),2)
+
+    for item_b in list_b:
+        q = (item_b - the_mean()[1]) ** 2 
+        b.append(int(q))
+        var_result_b = round(sum(b) / (the_mean()[1] - 1),2)
+
+    #return var_result
+
+    print(f"Random Number A: {list_a}")
+    print(f"Random Number B: {list_b}")
+    print(f"Mean for A: {the_mean()[0]}")
+    print(f"Mean for B: {the_mean()[1]}")
+    print(f"Variance for A: {var_result_a}")
+    print(f"Variance for B: {var_result_b}")
+
+
+the_variance()
